@@ -1,11 +1,10 @@
 const path=require("path")
-const Clean=require("clean-webpack-plugin")
 const htmlWebpackPlugin=require("html-webpack-plugin")
 const webpack=require("webpack")
-const multi = require("multi-loader")
+const appModule=process.env.appModule.trim()
 module.exports={
     entry:{
-        app:"./src/index.ts"
+        home:`./src/entry/${appModule}.ts`
     },
     output:{
         filename:"[name].bundle.js",
@@ -25,13 +24,15 @@ module.exports={
             ]
         },{
             test:/\.scss$/,
-            loader:multi(
-                "style-loader!css-loader!sass-loader"
-            )
+            loader:"style-loader!css-loader!sass-loader"
         },{
             test:/\.(png|svg|jpg|gif)$/,
             use:{
-                loader:"file-loader"
+                loader:"file-loader",
+                options:{
+                    name:"[name].[ext]",
+                    outputPath:"assets"
+                }
             }
         },{
             test: /\.js$/,
@@ -46,9 +47,8 @@ module.exports={
         extensions:[".ts",".js"]
     },
     plugins:[
-        new Clean(["./dist"]),
         new htmlWebpackPlugin({
-            template:"./src/index.html"
+            template:`./src/entry/${appModule}.html`
         }),
         new webpack.HotModuleReplacementPlugin({})
     ],

@@ -1,0 +1,1 @@
+{"version":3,"sources":["webpack:///./src/entry/login.scss"],"names":[],"mappings":"AAAA;AACA;AACA;AACA;AACA;AACA;AACA;AACA","file":"login.css","sourcesContent":["/* line 1, stdin */\n#login {\n  border: 1px solid #345678;\n  position: absolute;\n  top: 50%;\n  left: 50%;\n  transform: translate(-50%, -50%);\n}\n"],"sourceRoot":""}

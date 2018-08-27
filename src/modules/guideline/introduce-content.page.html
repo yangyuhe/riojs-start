@@ -1,9 +1,0 @@
-<div>
-    <h3>{{lesson.name}}</h3>
-    <p>{{lesson.des}}</p>
-    <div r-for="section in lesson.sections">
-        <h4>{{section.name}}</h4>
-        <p r-for="detail in section.details" r-html="{{detail}}"></p>
-    </div>
-
-</div>

@@ -1,0 +1,173 @@
+@charset "UTF-8";
+/*按钮*/
+/* line 4, src/assets/style/components.scss */
+.button {
+  background-color: #ffed00;
+  border: none;
+  box-shadow: none;
+  color: #000000;
+  cursor: pointer;
+}
+
+/* line 10, src/assets/style/components.scss */
+.button:hover {
+  color: #ffed00;
+  background-color: #000000;
+}
+
+/* line 15, src/assets/style/components.scss */
+.button.lg {
+  height: 50px;
+  font-weight: 700;
+  font-size: 20px;
+}
+
+/*表单*/
+/* line 21, src/assets/style/components.scss */
+fieldset {
+  min-width: 0px;
+  border: 0;
+  margin: 0;
+  padding: 0px;
+}
+
+/*编辑框*/
+/* line 29, src/assets/style/components.scss */
+.input-text {
+  width: 100%;
+  line-height: 34px;
+  height: 34px;
+  background-color: #fff;
+  background-image: none;
+  padding: 0px 6px;
+  border: .0625rem solid #ccc;
+  box-sizing: border-box;
+}
+
+/* line 38, src/assets/style/components.scss */
+.input-text:focus {
+  border-color: #66afe9;
+  outline: 0;
+}
+
+/* line 42, src/assets/style/components.scss */
+.input-text.input-text-with-icon {
+  padding-left: 13.5px;
+}
+
+/* line 46, src/assets/style/components.scss */
+.input-text.input-text-lg {
+  line-height: 44px;
+  height: 44px;
+  font-size: 1rem;
+}
+
+/*带左侧图片的编辑框*/
+/* line 52, src/assets/style/components.scss */
+.fieldset-icon {
+  position: relative;
+}
+
+/* line 54, src/assets/style/components.scss */
+.fieldset-icon .input-text {
+  padding-left: 35px;
+}
+
+/* line 57, src/assets/style/components.scss */
+.fieldset-icon .icon {
+  position: absolute;
+  top: 50%;
+  left: 10px;
+  margin-top: -6.75px;
+}
+
+/* line 63, src/assets/style/components.scss */
+.fieldset-icon .icon-lg {
+  margin-top: -10px;
+}
+
+/* line 68, src/assets/style/components.scss */
+.icon {
+  height: 13.5px;
+  width: 13.5px;
+  display: inline-block;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+/* line 76, src/assets/style/components.scss */
+.icon.icon-lg {
+  height: 20px;
+  width: 20px;
+}
+
+/* line 2, stdin */
+html, body {
+  height: 100%;
+  padding: 0px;
+  margin: 0px;
+  font-family: 'Arial Bold', 'Arial';
+  font-size: 13px;
+}
+
+/* line 8, stdin */
+html #app, body #app {
+  height: 100%;
+}
+
+/* line 10, stdin */
+html #app .page, body #app .page {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+/* line 14, stdin */
+html #app .page header, body #app .page header {
+  height: 100px;
+  border-bottom: 1px solid white;
+  display: flex;
+  position: relative;
+  padding: 0px 20px;
+}
+
+/* line 22, stdin */
+html #app .page header .logo, body #app .page header .logo {
+  position: absolute;
+  height: 50px;
+  width: 278px;
+  left: 30px;
+  top: 25px;
+  background: url(assets/logo.png);
+  background-size: cover;
+}
+
+/* line 32, stdin */
+html #app .page .content, body #app .page .content {
+  flex: 1 1 auto;
+  display: flex;
+}
+
+/* line 37, stdin */
+html #app .page footer, body #app .page footer {
+  height: 100px;
+}
+
+/* line 1, stdin */
+#home {
+  border: 1px solid gray;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* line 1, stdin */
+.test {
+  background: red;
+  height: 100px;
+}
+
+
+/*# sourceMappingURL=home.css.map*/
